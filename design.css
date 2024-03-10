@@ -41,3 +41,53 @@ body {
   transition: all 1s;
 }
 
+.card-1::before,
+.card-1::after {
+    background-image: url(img-1.jpg);
+    background-size: cover;
+}
+
+.card-1::after{
+    background-image: url(min-img-1.jpg);
+    background-size: cover;
+}
+.card-2::before,
+.card-2::after {
+    background-image: url(img-2.jpg);
+    background-size: cover;
+}
+
+.card-2::after{
+    background-image: url(min-img-2.jpg);
+    background-size: cover;
+}
+.card-3::before,
+.card-3::after {
+    background-image: url(img-3.jpg);
+    background-size: cover;
+}
+
+.card-3::after{
+    background-image: url(min-img-3.jpg);
+    background-size: cover;
+}
+
+.card::after {
+  transform-origin: right bottom;
+  transform: translate(10%, 10%) scale(0.3);
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+.card:hover::after {
+  transform: translate(0) scale(1);
+  border-radius: 0;
+  border-radius: 10px;
+}
+
+.card:hover::before {
+  transform-origin: right bottom;
+  transform: translate(10%, 10%) scale(0.3);
+  border-radius: 50%;
+  z-index: 1;
+}
